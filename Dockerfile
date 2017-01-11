@@ -7,7 +7,7 @@ WORKDIR /app
 # Cache npm dependencies
 COPY package.json /app/
 RUN npm install --global node-pre-gyp
-RUN npm install
+RUN npm install --verbose
 
 # Copy application files
 COPY . /app
