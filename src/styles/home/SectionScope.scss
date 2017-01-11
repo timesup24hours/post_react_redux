@@ -1,0 +1,78 @@
+.sectionScope-container {
+  height: 400px;
+  width: 400px;
+  margin: 0 auto;
+  background-image: url('../../public/images/SectionOne/model2.jpg');
+  background-position: center 60px;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  border-radius: 50%;
+  background-size: 50%;
+  position: relative;
+
+}
+.sectionScope-window-tint {
+  background-color: rgba(0, 0, 0, .5);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sectionScope-promo-text {
+  color: white;
+  font-weight: 100;
+  font-size: 40px;
+  line-height: 1.4;
+  text-align: center;
+
+  strong {
+    display: block;
+    font-size: 28px;
+
+
+    span {
+      font-weight: 300;
+      font-size: 18px;
+      font-style: italic;
+      color: rgba(255, 255, 255, .6);
+    }
+  }
+
+  a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 20px;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+      background: white;
+      color: black;
+    }
+  }
+}
+
+// screen width 800 below
+@media screen and (max-width: 700px) {
+  .sectionScope-container {
+    height: 300px;
+    width: 300px;
+    background-size: cover;
+  }
+}
+
+
+@media screen and (max-width: 380px) {
+  .sectionScope-container {
+    background-size: 100vh;
+  }
+
+}

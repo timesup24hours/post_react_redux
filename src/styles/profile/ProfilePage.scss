@@ -1,0 +1,28 @@
+@import './ProfileNav.scss';
+@import './ProfileInfo.scss';
+@import './UpdateField.scss';
+@import './UploadAvatar.scss';
+@import './CropAvatar.scss';
+@import './ProfileAvatar.scss';
+@import './UpdateInfo.scss';
+
+.profilPage-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.profilPage-view {
+  border-left: 1px solid rgba(0, 0, 0, .1);
+  width: 100%;
+}
+
+@media screen and (max-width: 700px) {
+  .profilPage-container {
+    flex-direction: column;
+  }
+
+  .profilPage-view {
+    border-left: 0px;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+  }
+}

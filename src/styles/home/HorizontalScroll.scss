@@ -1,0 +1,96 @@
+.HorizontalScroll-container {
+  position: relative;
+  margin: 100px auto 0px;
+  width: 80%;
+  padding: 0px 20px;
+  position: relative;
+}
+.HorizontalScroll-sub-container {
+  width: 100%;
+  overflow: auto;
+  height: 240px;
+  white-space: nowrap;
+  transition: all .3s ease;
+  &::-webkit-scrollbar {
+   display: none;
+  }
+
+}
+
+.HorizontalScroll-pre-btn {
+  // box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, .2);
+  z-index: 1000;
+  height: 100%;
+  width: 60px;
+  position: absolute;
+  float: left;
+  left: -50px;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+.HorizontalScroll-pre-btn:hover {
+  // background-color: rgba(0, 0, 0, .1);
+  cursor: pointer;
+}
+
+.HorizontalScroll-next-btn {
+  // box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, .2);
+  z-index: 1000;
+  height: 100%;
+  width: 60px;
+  position: absolute;
+  float: right;
+  right: -50px;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+.HorizontalScroll-next-btn:hover {
+  // background-color: rgba(0, 0, 0, .1);
+  cursor: pointer;
+}
+
+// screen width 800 below
+@media screen and (max-width: 700px) {
+
+  .HorizontalScroll-container {
+    margin-top: 80px;
+    width: 100%;
+  }
+  .HorizontalScroll-pre-btn {
+    box-shadow: none;
+    z-index: 1000;
+    height: 240px;
+    width: 60px;
+    position: absolute;
+    float: left;
+    left: 0;
+    top: 0;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .HorizontalScroll-next-btn {
+    box-shadow: none;
+    z-index: 1000;
+    height: 240px;
+    width: 60px;
+    position: absolute;
+    float: right;
+    right: 0;
+    top: 0;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+}

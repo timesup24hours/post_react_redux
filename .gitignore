@@ -1,0 +1,33 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# dependencies
+node_modules
+
+# testing
+coverage
+
+# production
+build
+
+# misc
+.DS_Store
+.env
+npm-debug.log
+
+# DB config
+#server.config.js
+
+#uploads
+public/uploads
+#public/images
+#public
+
+.vscode
+
+# config file
+config.js
+
+
+# docker
+#.dockerignore
+#Dockerfile

@@ -1,0 +1,39 @@
+.sendVerificationEmail-container {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  box-sizing: content-box;
+  flex-direction: column;
+}
+
+.sendVerificationEmail-btn {
+  margin-top: 20px;
+}
+
+.sendVerificationEmailForm {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 280px;
+  height: 200px;
+  position: relative;
+}
+
+.sendVerificationEmail-text-field {
+  width: 100%;
+}
+
+
+.sendVerificationEmail-Link {
+  position: fixed;
+  bottom: 0px;
+  margin-bottom: 10px;
+
+  a {
+    font-size: 12px;
+    font-weight: 100;
+    text-decoration: underline;
+  }
+}

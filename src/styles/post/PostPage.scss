@@ -1,0 +1,152 @@
+.postPage-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  max-width: 1000px;
+  margin: auto;
+  min-height: 70vh;
+
+}
+.postPage-progress {
+  display: flex;
+  justify-content: center;
+}
+
+.postPage-pagination {
+  margin: 0px auto;
+}
+
+.postPage-subcontainer {
+  display: flex;
+  padding: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  background-color: rgba(248,248,248, .8);
+}
+
+.postPage-add {
+  z-index: 1001;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+}
+
+.postForm-mask {
+  height: 100%;
+  width: 100%;
+  float: left;
+  left: 0;
+  top: 0;
+  position: fixed;
+  background-color: black;
+  opacity: 0.4;
+  z-index: 1002;
+  display: none;
+}
+
+.postForm-mask-show {
+  display: block;
+}
+
+.postForm-button-hide {
+  display: none;
+}
+
+.post-form-submitting-mask {
+  height: 100%;
+  width: 100%;
+  float: left;
+  left: 0;
+  top: 0;
+  position: fixed;
+  background-color: black;
+  opacity: 0.9;
+  z-index: 1004;
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  div {
+    color: white;
+    text-align: center;
+    line-height: 40px;
+  }
+}
+
+.post-form-submitting-mask-show {
+  display: flex;
+}
+
+.post-form-icon {
+  display: none;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+}
+
+.post-form-success-icon-show {
+  display: flex;
+  z-index: 1005;
+  background-color: white;
+  padding: 20px;
+  border: .5px solid rgba(0, 0, 0, 0.1);
+}
+
+.post-form-failure-icon-show {
+  display: flex;
+  z-index: 1005;
+  background-color: white;
+  padding: 20px;
+  border: .5px solid rgba(0, 0, 0, 0.1);
+}
+.post-form-submitting-process-bar {
+  margin: 0 auto;
+  width: 70%
+}
+.post-form-submitting-process-bar-hide {
+  display: none;
+}
+
+.postPage-loading {
+  height: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.postPage-newPost-notification {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: .6;
+
+  div {
+    opacity: .6;
+  }
+
+  &:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+
+  div:hover {
+    cursor: pointer;
+    opacity: 1;
+  }
+
+  div span:hover {
+    cursor: pointer;
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .postPage-subcontainer {
+    padding: 20px 0;
+  }
+}

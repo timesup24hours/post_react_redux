@@ -1,0 +1,20 @@
+.sectionParagraph-container {
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: white;
+}
+
+.sectionParagraph-div {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+  color: grey;
+
+  h1 {
+    font-weight: 200;
+    font-size: 30px;
+  }
+}

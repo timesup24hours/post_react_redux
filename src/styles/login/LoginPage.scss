@@ -1,0 +1,58 @@
+@import './LoginForm.scss';
+@import './ForgetPassword.scss';
+@import './ResetPassword.scss';
+
+.login-page-container {
+  padding: 20px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.login-page-header {
+  font-weight: 300;
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+.login-page-forget-password {
+  position: fixed;
+  bottom: 0px;
+  margin-bottom: 10px;
+
+  a {
+    font-size: 12px;
+    font-weight: 100;
+    text-decoration: underline;
+  }
+}
+
+.social-login-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-page-facebook-login {
+  margin-top: 20px;
+}
+
+.login-page-google-login {
+  margin-top: 20px;
+}
+
+
+// screen width 700 below
+@media screen and (max-width: 700px) {
+  .login-page-header {
+    display: none;
+    padding: 0px;
+  }
+  .login-page-forget-password {
+    margin: 0 auto 10px;
+    display: block;
+    width: 88%;
+    text-align: center;
+  }
+}

@@ -1,0 +1,39 @@
+.post-form {
+  display: none;
+  z-index: 1003;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  background-color: white;
+  width: 400px;
+  padding: 50px 50px 20px 50px;
+  height: auto;
+}
+
+.post-form-show {
+  display: block;
+}
+
+.postForm-button-group {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+
+  .postForm-submit {
+    margin: 10px;
+  }
+  .postForm-cancel {
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .post-form {
+    right: auto;
+    width: auto;
+    right: 2px;
+    bottom: 2px;
+    left: 2px;
+    padding: 50px 50px 20px 50px;
+  }
+}

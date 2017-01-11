@@ -1,0 +1,61 @@
+@import './home/HomePage.scss';
+@import './nav/Nav.scss';
+@import './post/Post.scss';
+@import './post/PostDetail.scss';
+@import './post/PostPage.scss';
+@import './post/PostForm.scss';
+@import './comment/Comment.scss';
+@import './pagination/pagination.scss';
+@import './login/LoginPage.scss';
+@import './signup/SignupPage.scss';
+@import './mask/Mask.scss';
+@import './notification/Notification.scss';
+@import './chat/ChatPage.scss';
+@import './profile/ProfilePage.scss';
+@import './userLinks/UserLinks.scss';
+@import './contact/ContactPage.scss';
+@import './userDetail/UserDetail.scss';
+
+@import './color/Color.scss';
+@import './utils/general.scss';
+
+html,body,h1,h2,h3,h4,h5,h6,div,dl,dt,dd,ul,ol,li,p,blockquote,pre,hr,figure,table,caption,th,td,form,fieldset,legend,input,button,textarea,menu
+{margin:0;padding:0;}
+html,body,fieldset,img,iframe,abbr{border:0;}
+li{list-style:none;}
+
+/*清除浮动*/
+.clear{clear: both;}
+
+/*清除浮动--推荐使用*/
+.clearfix:before,.clearfix:after{content: '';display: table;}
+.clearfix:after{clear: both;}
+
+body {
+  height: 100%;
+  background-color: rgba(248,248,248, .8);
+}
+
+// hide the scroll bar of the body
+body::-webkit-scrollbar {
+ display: none;
+}
+
+img {
+  cursor: pointer;
+}
+
+.App-container {
+  position: relative;
+}
+
+.body-container {
+  padding-top: 80px;
+}
+
+@media screen and (max-width: 700px) {
+  .body-container {
+    padding-top: 60px;
+  }
+
+}

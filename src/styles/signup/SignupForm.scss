@@ -1,0 +1,30 @@
+.singupForm-container {
+  position: relative;
+  width: 52%;
+}
+
+.singupForm-field-group {
+
+}
+
+.singupForm-button-group {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+
+  .singupForm-cancel {
+    margin: 10px;
+  }
+  .singupForm-submit {
+    margin: 10px;
+  }
+}
+
+// screen width 700 below
+@media screen and (max-width: 700px) {
+  .singupForm-container {
+    width: 92%;
+  }
+}

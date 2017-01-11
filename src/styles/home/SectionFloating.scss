@@ -1,0 +1,52 @@
+.SectionFloating-container {
+  width: 70%;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.SectionFloating-post-col {
+  padding: 10px 20px;
+
+  .SectionFloating-post {
+    box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, .2);
+    text-align: center;
+    background: white;
+    position: relative;
+    padding: 10px 0 20px;
+
+    h5 {
+      font-weight: 200;
+      font-size: 30px;
+      padding: 10px;
+    }
+    p {
+      padding: 10px 20px;
+    }
+
+  }
+
+  img {
+    width: 100%;
+    margin-bottom: 10px;
+
+  }
+}
+
+.SectionFloating-post-one {
+  transform: translate(100px, 20px);
+}
+
+.SectionFloating-post-two {
+  z-index: 2;
+}
+
+.SectionFloating-post-three {
+  transform: translate(-100px, 20px);
+}
+
+@media screen and (max-width: 500px) {
+  .SectionFloating-container {
+    width: 90%;
+  }
+
+}

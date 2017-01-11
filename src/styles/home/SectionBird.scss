@@ -1,0 +1,45 @@
+.SectionOne-container {
+  width: 100%;
+  height: 600px;
+  position: relative;
+  background: url('../../public/images/SectionOne/bird-bg.jpg') no-repeat;
+  background-size: auto 600px;
+  background-position: top center;
+  // background-attachment: fixed;
+  overflow: hidden;
+}
+
+.SectionOne-logo {
+  height: 100px;
+  width: 100%;
+  background-image: url('../../public/images/SectionOne/black-bird-logo.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  margin-top: -50px;
+  transition: all .1s ease-in-out;
+}
+
+.SectionOne-fore-bird {
+  background-image: url('../../public/images/SectionOne/fore-bird.png');
+  width: 960px;
+  height: 733px;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  position: absolute;
+  left: 50%;
+  margin-left: -480px;
+  top: 380px;
+}
+
+.SectionOne-back-bird {
+  width: 960px;
+  height: 298px;
+  background-image: url('../../public/images/SectionOne/back-bird.png');
+  background-repeat: no-repeat;
+  background-position: top left;
+  margin-left: -480px;
+  left: 50%;
+  position: absolute;
+}

@@ -1,0 +1,32 @@
+@import './SignupForm.scss';
+@import './EmailVerified.scss';
+@import './SendVerificationEmail.scss';
+
+.signup-page-container {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.signup-page-text {
+  font-weight: 300;
+  font-size: 40px;
+  text-align: center;
+  margin: 30px auto;
+}
+
+// screen width 700 below
+@media screen and (max-width: 700px) {
+  .signup-page-container {
+    padding-top: 10px;
+  }
+  .signup-page-text {
+    font-size: 20px;
+    margin: 0px auto;
+    display: none;
+  }
+}

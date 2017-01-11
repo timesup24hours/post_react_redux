@@ -1,0 +1,73 @@
+.commentForm-container {
+  width: auto;
+  height: auto;
+  position: relative;
+}
+
+.commentForm-mask {
+  background-color: rgba(255, 255, 255, .8);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 1005;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.commentForm-mask-hide {
+  display: none;
+}
+
+.commentForm-body {
+
+}
+
+
+.commentForm-footer {
+  display: flex;
+  justify-content: flex-end;
+
+
+  .commentForm-postedBy {
+    width: 200px;
+  }
+
+  .commentForm-button-group {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+
+    .commentForm-cancel {
+
+    }
+    .commentForm-submit {
+      margin-left: 20px;
+    }
+  }
+}
+
+.commentForm-footer-hide {
+  display: none;
+}
+
+@media screen and (max-width: 420px) {
+  .commentForm-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .commentForm-postedBy {
+      width: 100%;
+    }
+
+    .commentForm-button-group {
+      margin: 40px auto 0px auto;
+    }
+  }
+
+  .commentForm-footer-hide {
+    display: none;
+  }
+
+}

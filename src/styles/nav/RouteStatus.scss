@@ -1,0 +1,44 @@
+.routeStatus-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 4px;
+  opacity: .3;
+  width: 50%;
+  transition: all .3s ease-in-out;
+
+}
+.routeStatus-hide {
+  display: none;
+}
+
+.routeStatus-container {
+  margin: 0px 10px;
+  padding: 16px 0px 20px 20px;
+  background-color: white;
+  width: 100%;
+  z-index: 1;
+  margin-top: 4px;
+  animation-duration: 1s;
+  opacity: .7;
+  transition: all 2s ease-in-out;
+  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, .2);
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.routeStatus-home-link {
+  color: grey;
+  margin: 0px 10px;
+}
+
+@media screen and (max-width: 700px) {
+  .routeStatus-container {
+    padding: 60px 0px 10px 6px;;
+  }
+  .routeStatus-container {
+    display: none;
+  }
+}

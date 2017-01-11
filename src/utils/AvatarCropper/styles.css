@@ -1,0 +1,177 @@
+.AvatarCropper-base {
+  text-align: center;
+}
+
+.AvatarCropper-base input[type=range] {
+  display: inline-block;
+}
+
+.AvatarCropper-base input[type=range] {
+  /*removes default webkit styles*/
+  -webkit-appearance: none;
+  /*fix for FF unable to apply focus style bug */
+  padding: 20px 0;
+  /*border: 1px solid white;*/
+
+  /*required for proper track sizing in FF*/
+  width: 400px;
+}
+.AvatarCropper-base input[type=range]::-webkit-slider-runnable-track {
+  width: 400px;
+  height: 5px;
+  background: #ddd;
+  border: none;
+  border-radius: 3px;
+}
+.AvatarCropper-base input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: #454545;
+  margin-top: -4px;
+}
+.AvatarCropper-base input[type=range]:focus {
+  outline: none;
+}
+.AvatarCropper-base input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #ccc;
+}
+
+.AvatarCropper-base input[type=range]::-moz-range-track {
+  width: 400px;
+  height: 5px;
+  background: #ddd;
+  border: none;
+  border-radius: 3px;
+}
+.AvatarCropper-base input[type=range]::-moz-range-thumb {
+  border: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: #454545;
+}
+
+/*hide the outline behind the border*/
+.AvatarCropper-base input[type=range]:-moz-focusring{
+  outline: 1px solid white;
+  outline-offset: -1px;
+}
+
+.AvatarCropper-base input[type=range]::-ms-track {
+  width: 400px;
+  height: 5px;
+
+  /*remove bg colour from the track, we'll use ms-fill-lower and ms-fill-upper instead */
+  background: transparent;
+
+  /*leave room for the larger thumb to overflow with a transparent border */
+  border-color: transparent;
+  border-width: 6px 0;
+
+  /*remove default tick marks*/
+  color: transparent;
+}
+.AvatarCropper-base input[type=range]::-ms-fill-lower {
+  background: #777;
+  border-radius: 10px;
+}
+.AvatarCropper-base input[type=range]::-ms-fill-upper {
+  background: #ddd;
+  border-radius: 10px;
+}
+.AvatarCropper-base input[type=range]::-ms-thumb {
+  border: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 90%;
+  background: #454545;
+}
+.AvatarCropper-base input[type=range]:focus::-ms-fill-lower {
+  background: #888;
+}
+.AvatarCropper-base input[type=range]:focus::-ms-fill-upper {
+  background: #ccc;
+}
+.AvatarCropper-base canvas {
+  cursor: move;
+}
+
+
+
+
+
+
+
+
+.modal-container {
+  position: relative;
+}
+.modal-container .modal, .modal-container .modal-backdrop {
+  position: absolute;
+}
+
+.modal-content {
+}
+
+.modal-body {
+}
+
+.modal-footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 24px;
+}
+
+.model-footer-cancel {
+  width: 20%;
+}
+
+.model-footer-crop {
+  width: 20%;
+  margin-left: 20px;
+
+}
+.modal-container {
+  position: relative;
+}
+.modal-container .modal, .modal-container .modal-backdrop {
+  position: absolute;
+}
+
+.ModalCustom-container {
+  z-index: 10001;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  left: 0px;
+  top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ModalCustomClassName {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-left: -160px;
+  margin-top: -200px;
+  padding-top: 40px;
+  z-index: 10002;
+  height: 400px;
+  width: 320px;
+  background-color: white;
+  box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.ModalCustomClassName:focus {
+  user-select: none;
+  outline: none;
+  border: none;
+}

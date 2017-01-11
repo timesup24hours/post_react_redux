@@ -1,0 +1,71 @@
+.uploadAvatar-container {
+  margin: 40px 0px 0px 0px;
+  display: flex;
+  flex-direction: row;
+}
+
+.uploadAvatar-sub-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.uploadAvatar-upload-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+
+  .uploadAvatar-sub-upload-container {
+    position: relative;
+  }
+
+  .uploadAvatar-drop-div {
+    color: grey;
+    text-align: center;
+    padding: 70px 20px;
+  }
+}
+.uploadAvatar-upload-container-hide {
+  display: none;
+}
+
+
+.uploadAvatar-preview-container {
+  position: relative;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: none;
+
+  .uploadAvatar-preview-img {
+    height: 120px;
+    width: 120px;
+    position: relative;
+    border: none;
+
+    .uploadAvatar-preview-cancel-btn {
+      position: absolute;
+      right: -11px;
+      top: -11px;
+    }
+
+  }
+
+  .uploadAvatar-preview-btn-group {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .uploadAvatar-preview-btn-group-hide {
+    display: none;
+  }
+}
+
+.hide {
+  display: none;
+}

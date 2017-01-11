@@ -1,0 +1,20 @@
+.NavMask {
+  height: 100%;
+  width: 100%;
+  float: left;
+  left: 0;
+  top: 0;
+  position: fixed;
+  background-color: black;
+  opacity: 0.4;
+  z-index: 1001;
+  display: none;
+}
+
+.NavMask-show {
+  display: block;
+}
+
+.NavMask-hide {
+  display: none;
+}

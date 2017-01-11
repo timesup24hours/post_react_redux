@@ -1,0 +1,50 @@
+.chatForm-container {
+  margin-top: 10px;
+  position: relative;
+}
+
+.chatForm {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  flex-direction: row;
+}
+
+.chatForm-input {
+  width: 90%;
+  margin: 0 0px 0 10px;
+}
+
+.chatForm-btn {
+  margin: 0px 20px 0 10px;
+}
+
+.chatForm-mask {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+  background-color: rgba(255, 255, 255, .5);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+.chatForm-mask-hide {
+  display: none;
+}
+
+@media screen and (max-width: 320px) {
+  .chatForm-input {
+    width: 70%;
+    margin: 0 0 2px 0;
+  }
+  .chatForm-btn {
+    margin: 0px 0 0 8px;
+  }
+  .chatForm {
+    padding: 0 10px;
+  }
+}

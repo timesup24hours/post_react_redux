@@ -1,0 +1,26 @@
+.loginForm-container {
+  position: relative;
+  width: 320px;
+}
+
+.loginForm-field-group {
+
+}
+
+.loginForm-button-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.loginForm-submit {
+
+}
+
+// screen width 800 below
+@media screen and (max-width: 700px) {
+  .loginForm-container {
+    width: 94%;
+  }
+}

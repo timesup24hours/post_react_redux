@@ -1,0 +1,70 @@
+.sectionModel-container {
+  width: 60%;
+  margin: 0px auto;
+  background-color: white;
+
+}
+
+.sectionModel-row {
+}
+
+.sectionModel-figure {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  transform: translateX(30px);
+  // transform: translateX(-20px);
+  transition: all 0.4s ease-in-out;
+  // transition: all 0.3s ease-in-out;
+  margin-bottom: 20px;
+  overflow: hidden;
+
+  div {
+    overflow: hidden;
+    position: relative;
+  }
+
+  figcaption {
+    position: absolute;
+    bottom: 0px;
+    left: -100%;
+    background: black;
+    color: white;
+    padding: 2px 8px;
+    font-size: 11px;
+    transition: all .3s ease-in-out;
+  }
+
+  &:hover {
+    figcaption {
+      left: 0px;
+    }
+    img {
+      transform: scale(1.2);
+    }
+  }
+}
+
+.sectionModel-figure img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  transform: scale(1);
+  transition: all .3s ease-in-out;
+}
+
+.is-showing {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+@media screen and (max-width: 500px) {
+  .sectionModel-container {
+    width: 90%;
+
+  }
+
+}

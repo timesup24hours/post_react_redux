@@ -1,0 +1,36 @@
+.contactForm-container {
+  width: 80%;
+  margin: auto;
+}
+
+.contactForm-button-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactForm-button-group {
+  margin: 20px;
+}
+
+.contactForm-email-div-hide {
+  display: none;
+}
+
+.contactForm-notifi-container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, .6);
+}
+
+.contactForm-notifi-div {
+  position: relative;
+  height: 320px;
+  width: 320px;
+}

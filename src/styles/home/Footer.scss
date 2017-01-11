@@ -1,0 +1,52 @@
+.Footer-container {
+  background-color: black;
+  color: white;
+  padding: 40px 0;
+  bottom: 0;
+  width: 100%;
+  margin-top: 100px;
+  z-index: -1;
+  position: fixed;
+
+  .Footer-content {
+    max-width: 640px;
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  a {
+    color: white;
+  }
+
+
+  .Footer-col-left {
+    margin-bottom: 20px;
+  }
+
+  .Footer-col-right {
+
+
+    .Footer-p {
+      margin-top: -3px;
+    }
+
+    .Footer-signup {
+
+      .Footer-btn {
+      }
+    }
+
+
+  }
+
+
+
+}
+
+
+// // screen width 500 below
+// @media screen and (max-width: 500px) {
+//   .Footer-container {
+//     height: 50vh;
+//   }
+// }

@@ -1,0 +1,45 @@
+@import './HomeImg.scss';
+@import './SectionBird.scss';
+@import './SectionFullWidthImg.scss';
+@import './SectionParagraph.scss';
+@import './SectionModel.scss';
+@import './SectionScope.scss';
+@import './SectionFloating.scss';
+@import './HorizontalScroll.scss';
+@import './Footer.scss';
+
+.HomePage-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  flex-direction: column;
+  background-color: rgba(248,248,248, .8);
+  position: relative;
+  margin-top: -80px;
+  z-index: 11;
+}
+
+.HomePage-content {
+  position: relative;
+  top: 1000px;
+  width: 100%;
+  background-color: white;
+  overflow: hidden;
+  z-index: 100;
+  padding-bottom: 400px;
+}
+
+
+// screen width 800 below
+@media screen and (max-width: 700px) {
+  .HomePage-container {
+    margin-top: -60px;
+  }
+  .HomePage-img {
+    margin-top: -10px;
+  }
+  // .HomePage-content {
+  //   margin-bottom: 350px;
+  // }
+
+}
